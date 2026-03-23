@@ -24,7 +24,7 @@ def calculate_electricity_bill_2026(kwh):
     return total_bill * 1.08 # Thuế VAT 8%
 
 # 2. Xử lý dữ liệu
-df = pd.read_csv('data/electricity_usage.csv')
+df = pd.read_csv('electricity_usage.csv')
 df['Month_Index'] = range(len(df))
 
 # 3. Huấn luyện mô hình
