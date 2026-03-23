@@ -1,23 +1,17 @@
-# Đồ án: Dự báo Tiền điện Hộ gia đình (3 tháng tới)
+# ⚡ Đồ án: Dự đoán tiêu thụ điện năng & Chi phí hàng tháng
 
-## 📌 Giới thiệu
-Đồ án này sử dụng các kỹ thuật Khoa học Dữ liệu để phân tích lịch sử tiêu thụ điện và dự báo chi phí tiền điện cho 3 tháng tiếp theo. Dự án giúp người dùng hiểu rõ thói quen sử dụng và tối ưu hóa chi tiêu năng lượng.
+## 📖 Tổng quan
+Đồ án sử dụng thuật toán **Linear Regression** để tìm ra mối liên hệ giữa nhiệt độ thời tiết và mức độ tiêu thụ điện của hộ gia đình, từ đó đưa ra dự báo tài chính cho 3 tháng tiếp theo.
 
-## 📊 Dữ liệu sử dụng
-- **Nguồn:** Dữ liệu tiêu thụ điện theo tháng (kWh) từ năm 2021 - 2025.
-- **Các thuộc tính:** Tháng, Năm, Số chữ điện (kWh), Nhiệt độ trung bình, Số ngày trong tháng.
+## 🛠 Cách chạy dự án
+1. Clone repository: `git clone <link_cua_ban>`
+2. Cài đặt thư viện: `pip install -r requirements.txt`
+3. Chạy file phân tích: `python model_dudoan.py`
 
-## 🛠 Công nghệ sử dụng
-- **Ngôn ngữ:** Python 3.x
-- **Thư viện chính:** - `pandas`, `numpy`: Xử lý dữ liệu.
-  - `matplotlib`, `seaborn`: Trực quan hóa.
-  - `scikit-learn`: Xây dựng mô hình Regression.
-  - `prophet`: Dự báo chuỗi thời gian (Time Series).
+## 📊 Phương pháp tiếp cận
+- **Dữ liệu:** Thu thập từ hóa đơn điện thực tế và dữ liệu thời tiết lịch sử.
+- **Tính toán:** Áp dụng công thức tính giá điện bậc thang của EVN.
+- **Đánh giá:** Sử dụng chỉ số R-squared để đo lường độ khớp của mô hình.
 
-## 🚀 Quy trình thực hiện
-1. **Tiền xử lý:** Làm sạch dữ liệu, xử lý giá trị thiếu.
-2. **Feature Engineering:** Tạo các biến trễ (lag), biến mùa vụ.
-3. **Huấn luyện mô hình:** So sánh giữa Linear Regression và Facebook Prophet.
-4. **Tính toán chi phí:** Áp dụng biểu giá điện bậc thang của EVN để quy đổi từ kWh sang VNĐ.
-
-## 📈 Kết quả
+## 🎯 Kết quả mong đợi
+Giúp người dùng chủ động hơn trong việc sử dụng thiết bị làm mát khi nhiệt độ môi trường tăng cao, tránh rơi vào các bậc điện giá cao (Bậc 5, Bậc 6).
