@@ -1,17 +1,16 @@
-# ⚡ Đồ án: Dự đoán tiêu thụ điện năng & Chi phí hàng tháng
+# Personal Electricity Cost Prediction
 
-## 📖 Tổng quan
-Đồ án sử dụng thuật toán **Linear Regression** để tìm ra mối liên hệ giữa nhiệt độ thời tiết và mức độ tiêu thụ điện của hộ gia đình, từ đó đưa ra dự báo tài chính cho 3 tháng tiếp theo.
+Đồ án sử dụng Machine Learning để dự báo lượng điện tiêu thụ và chi phí hóa đơn cho 3 tháng tiếp theo dựa trên dữ liệu lịch sử và nhiệt độ môi trường.
 
-## 🛠 Cách chạy dự án
-1. Clone repository: `git clone <link_cua_ban>`
-2. Cài đặt thư viện: `pip install -r requirements.txt`
-3. Chạy file phân tích: `python model_dudoan.py`
+## Tính năng chính
+- Xử lý dữ liệu chuỗi thời gian (Time Series).
+- Dự báo chỉ số kWh bằng mô hình Linear Regression.
+- Tự động tính toán số tiền dựa trên biểu giá điện bậc thang của EVN.
 
-## 📊 Phương pháp tiếp cận
-- **Dữ liệu:** Thu thập từ hóa đơn điện thực tế và dữ liệu thời tiết lịch sử.
-- **Tính toán:** Áp dụng công thức tính giá điện bậc thang của EVN.
-- **Đánh giá:** Sử dụng chỉ số R-squared để đo lường độ khớp của mô hình.
+## Cách sử dụng
+1. Cài đặt thư viện: `pip install -r requirements.txt`
+2. Cập nhật dữ liệu cá nhân của bạn vào file `electricity_usage.csv`.
+3. Chạy mã nguồn: `python predict.py`
 
-## 🎯 Kết quả mong đợi
-Giúp người dùng chủ động hơn trong việc sử dụng thiết bị làm mát khi nhiệt độ môi trường tăng cao, tránh rơi vào các bậc điện giá cao (Bậc 5, Bậc 6).
+## Kết quả
+Mô hình sẽ tạo ra file `prediction_chart.png` trực quan hóa xu hướng tiêu thụ điện.
