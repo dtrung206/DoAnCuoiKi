@@ -34,8 +34,12 @@ model = LinearRegression()
 model.fit(X, y)
 
 # 4. Dự báo cho quý 2 năm 2026 (Tháng 4, 5, 6)
-# Giả định nhiệt độ tăng mạnh khi vào hè: 32°C, 35°C, 37°C
-future_months = np.array([[15, 32], [16, 35], [17, 37]]) 
+# Thay vì dùng np.array, ta dùng DataFrame để khớp với định dạng lúc huấn luyện
+future_months = pd.DataFrame(
+    [[15, 32], [16, 35], [17, 37]], 
+    columns=['Month_Index', 'Avg_Temp']
+)
+
 predictions = model.predict(future_months)
 
 print("-" * 45)
