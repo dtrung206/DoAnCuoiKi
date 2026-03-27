@@ -23,4 +23,5 @@
 Mô hình sẽ tạo ra file `prediction_chart.png` trực quan hóa xu hướng tiêu thụ điện.
 Đây là kết quả khi chạy chương trình :
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/5b66adaa-0f28-4e6f-a89f-f902e6f32b3d" />
+<img width="853" height="460" alt="image" src="https://github.com/user-attachments/assets/58f9f3e9-e1fe-423c-8fed-7103f03a0a17" />
+
