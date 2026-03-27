@@ -1,3 +1,10 @@
+## Thành viên thực hiện (Nhóm 18)
+
+| Họ và Tên | Mã SV |
+|:---|:---|
+| Vũ Việt Thành | 698259 |
+| Bùi Văn Thư | 698273 |
+| Nguyễn Đình Trung | 698288 |
 # Personal Electricity Cost Prediction
 
 Đồ án sử dụng Machine Learning để dự báo lượng điện tiêu thụ và chi phí hóa đơn cho 3 tháng tiếp theo dựa trên dữ liệu lịch sử và nhiệt độ môi trường.
